@@ -6,3 +6,6 @@ console.log(pdBig)
 console.log(popular)
 console.log(mini)
 
+for(let i of mini){
+    i.addEventListener('mouseon',()=>{})
+}
