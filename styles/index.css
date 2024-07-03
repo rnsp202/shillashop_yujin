@@ -1,44 +1,569 @@
-html, body {}
+html, body {
+    width: 1920px; margin: 0 auto;
+    background-color: #262626;
+}
 /* -------------------------------------header */
-header {}
-header .top {}
+header {
+    width: 100%; background-color: #262626;
+    padding: 0 96px;
+    position: relative;
+}
+header .top {
+    width: 100%; height: 78px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 19px;
+    align-items: end;
+}
 header .top h1 {}
 header .top h1 a {}
 header .top h1 a img {}
-header .top .right {}
-header .top .right a {}
-header .bottom {}
-header .bottom .sub_bg {}
-header .bottom nav {}
-header .bottom nav .gnb {}
-header .bottom nav .gnb li {}
-header .bottom nav .gnb li a {}
-header .bottom nav .gnb li .lnb {}
-header .bottom nav .gnb li .lnb li {}
+header .top .right {
+}
+header .top .right a:nth-child(2) {
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777;
+}
+header .top .right a:last-child {padding-right: 0;}
+header .top .right a {
+    font-weight: 300;
+    padding: 0 16px;
+}
+header .bottom {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 19px;
+}
+header .bottom .sub_bg {
+    /* display: none; */
+    position: absolute;
+    z-index: 9;
+    background-color: #262626;
+    width: 100%;
+    height: 260px;
+    margin-top: 30px;
+    left: 0;
+}
+header .bottom nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;}
+header .bottom nav .gnb {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+}
+header .bottom nav .gnb li {
+    margin-right: 72px;}
+header .bottom nav .gnb li a {font-weight: 300;}
+header .bottom nav .gnb li .lnb {
+    /* display: none; */
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+}
+header .bottom nav .gnb li .lnb li {
+    margin-bottom: 16px;
+}
 header .bottom nav .gnb li .lnb li a {}
-header .bottom nav .right {}
-header .bottom nav .right .nav_right {}
-header .bottom nav .right .nav_right li {}
-header .bottom nav .right .nav_right li a {}
-header .bottom nav .right .nav_right li .price_list {}
-header .bottom nav .right .nav_right li .price_list li {}
-header .bottom nav .right .nav_right li .price_list li a {}
-header .bottom nav .right .nav_right li > p {}
-header .bottom nav .right .nav_right li #search_product {}
-header .bottom nav .right .nav_right li #search_product fieldset {}
-header .bottom nav .right .nav_right li #search_product fieldset #search {}
-header .bottom nav .right .nav_right li #search_product fieldset #search_btn {}
+header .bottom .right {}
+header .bottom .right .nav_right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;}
+header .bottom .right .nav_right li {
+    display: inline-block;
+    margin-left: 40px;
+}
+header .bottom .right .nav_right li .sch p img {}
+header .bottom .right .nav_right li .sch p {}
+header .bottom .right .nav_right li .sch {
+    width: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;}
+header .bottom .right .nav_right li a {
+    font-weight: 300;
+}
+header .bottom .right .nav_right li .price_list {
+    /* display: none; */
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+}
+header .bottom .right .nav_right li .price_list li {
+    width: 100px;
+    margin-bottom: 16px;}
+header .bottom .right .nav_right li .price_list li a:last-child {
+}
+header .bottom .right .nav_right li #search_product {
+    /* display: none; */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 10;
+}
+header .bottom .right .nav_right li #search_product fieldset {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header .bottom .right .nav_right li #search_product fieldset #search {
+    border: 0; padding: 4px; height: 32px;
+}
+header .bottom .right .nav_right li #search_product fieldset #search_btn::after {
+    content: '';
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px; height: 32px;
+    display: inline-block;
+}
+header .bottom .right .nav_right li #search_product fieldset #search_btn {width: 32px; height: 32px;
+    background-color: #C1B198;
+    border: 0;}
 /* ----------------------------------------main */
 main {}
 main #visual_slide {}
 main #visual_slide .swiper-wrapper {}
-main #visual_slide .swiper-wrapper .swiper-slide {}
-main #visual_slide .swiper-wrapper .swiper-slide .visual_contents {}
-main #visual_slide .swiper-wrapper .swiper-slide .visual_contents h3 {}
-main #visual_slide .swiper-wrapper .swiper-slide .visual_contents p {}
-main #visual_slide .swiper-wrapper .swiper-slide .visual_contents .more_show {}
+main #visual_slide .swiper-wrapper .swiper-slide {
+    width: 100%; 
+    /* height: 824px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main #visual_slide .swiper-wrapper .banner1 {
+    background-image: url(../images/visual001.jpg);
+}
+main #visual_slide .swiper-wrapper .banner2 {
+    background-image: url(../images/visual002.jpg);
+}
+main #visual_slide .swiper-wrapper .banner3 {
+    background-image: url(../images/visual003.jpg);
+}
+main #visual_slide .swiper-wrapper .banner4 {
+    background-image: url(../images/visual004.jpg);
+}
+main #visual_slide .swiper-wrapper .banner5 {
+    background-image: url(../images/visual005.jpg);
+}
+main #visual_slide .swiper-wrapper .banner6 {
+    background-image: url(../images/visual006.jpg);
+}
+main #visual_slide .swiper-wrapper .swiper-slide .visual_contents {
+    margin: 132px 132px 385.22px;
+    /* padding: 132px 132px 385.22px; */
+}
+main #visual_slide .swiper-wrapper .swiper-slide .visual_contents h3 {
+    font-family: 'Gowun Batang', serif;
+    font-size: 4em;
+}
+main #visual_slide .swiper-wrapper .swiper-slide .visual_contents > p {
+    font-size: 1.5em; font-weight: 300;
+    line-height: 160%;
+    margin: 44px 0 62px;
+}
+main #visual_slide .swiper-wrapper .swiper-slide .visual_contents .more_show {
+    width: 230px; height: 60px;
+    padding: 20px 22px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+}
+main #visual_slide .swiper-wrapper .swiper-slide .visual_contents .more_show p {font-size: 1.25em;}
+main #visual_slide .swiper-wrapper .swiper-slide .visual_contents .more_show p img{
+    margin-top: 4px;
+}
 main #visual_slide .swiper-pagination {}
+#visual_slide .swiper-pagination-bullet {
+    opacity: 1; /*기본값0.2*/
+    background: #9D7C6C;
+}
+#visual_slide .swiper-pagination-bullet-active {background: #FFEDD1;}
+/* ----------------------------------------공통 */
+main .bg  {}
+main .bg section {width: 1854px; margin: 0 auto;}
+main .bg section h2 {
+    font-family: 'Scheherazade New', serif;
+    font-size: 2.25em;
+    text-align: center;
+}
+main .bg section .sub_title {
+    margin-top: 34px;
+    color: #C1B198; 
+    font-weight: 300; font-size: 1em;
+    text-align: center;
+}
+.detail_btn {
+    display: flex;
+    height: 24px;
+    flex-flow: row nowrap;
+    align-items: center;
+    float: right;
+}
+.detail_btn p {font-size: 1em; font-weight: 200;}
+.detail_btn p img {}
 /* ----------------------------------------bg1 */
-main .bg {}
-main .bg h2 {}
-main .bg .sub_title {}
+main .bg1 {
+    text-align: center;
+}
+main .bg1 h2 {padding-top: 195px;}
+main .bg1 .sub_title {margin-bottom: 38px;}
+main .bg1 .more {
+    width: 1650px;
+    margin: 0 auto;
+    padding-bottom: 77px;
+}
+main .bg1 .more .detail_btn {}
+main .bg1 .more p {}
+main .bg1 .more p img {}
+/* ----------------------------------------bg2 */
+main .bg2 {}
+main .bg2 h2 {padding-top: 118px;}
+main .bg2 .sub_title {margin-bottom: 58px;}
+main .bg2 .contents {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 78px;
+}
+main .bg2 .contents .big_img {}
+main .bg2 .contents .big_img p {display: none;}
+main .bg2 .contents .big_img p img {}
+main .bg2 .contents .big_img p:nth-child(3) {
+    display: inline-block;
+}
+main .bg2 .contents .popular_what {
+    width: 975px; height: 728px;
+    background-image: url(../images/product_deco_line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+main .bg2 .contents .popular_what .popular_txt {
+}
+main .bg2 .contents .popular_what .popular_txt div h4 {
+    font-family: 'Gowun Batang', serif;
+    font-size: 2.25em; margin: 80px 0 30px;
+    margin-left: 41px;
+}
+main .bg2 .contents .popular_what .popular_txt div .gold_txt {
+    color: #F2E3C4; font-weight: 200;
+    margin-top: 16px;
+    margin-left: 45px;
+}
+main .bg2 .contents .popular_what .popular_txt div .small_txt {
+    font-weight: 200; line-height: 180%;
+    margin: 48px 0 48px 45px;
+}
+main .bg2 .contents .popular_what .popular_txt div .price {
+    margin-left: 45px;
+    font-size: 2em; font-weight: 100;
+    color: #CCCCCC;
+}
+main .bg2 .contents .popular_what .popular_txt .popular1,
+main .bg2 .contents .popular_what .popular_txt .popular2,
+main .bg2 .contents .popular_what .popular_txt .popular4 {display: none;}
+main .bg2 .contents .popular_what .popular_txt .popular3 {display: block;}
+main .bg2 .contents .popular_what .mini_contents {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
+main .bg2 .contents .popular_what .mini_contents .detail_btn {}
+main .bg2 .contents .popular_what .mini_contents .mini_img {
+    margin-left: 41px;
+    width: 934px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;}
+main .bg2 .contents .popular_what .mini_contents .mini_img a {
+    width: 214px; height: 214px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .bg2 .contents .popular_what .mini_contents .mini_img a img {
+    /* display: inline-block;
+    width: 214px; height: 214px; */
+    opacity: 0; 
+    transition: 0.5s;
+}
+main .bg2 .contents .popular_what .mini_contents .mini_img a img:hover {opacity: 1;}
+main .bg2 .contents .popular_what .mini_contents .mini_img .mini01 {
+    background-image: url(../images/product_out01.png);}
+main .bg2 .contents .popular_what .mini_contents .mini_img .mini02 {
+    background-image: url(../images/product_out02.png);}
+main .bg2 .contents .popular_what .mini_contents .mini_img .mini03 {
+    background-image: url(../images/product_out03.png);}
+main .bg2 .contents .popular_what .mini_contents .mini_img .mini04 {
+    background-image: url(../images/product_out04.png);}
+/* ----------------------------------------bg3 */
+main .bg3 {}
+main .bg3 section {}
+main .bg3 section h2 {padding-top: 114px;}
+main .bg3 section .sub_title {margin-bottom: 52px;}
+main .bg3 section .content_gift {padding-bottom: 76px;}
+main .bg3 section .content_gift .gift_menu {
+    width: 1412px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+main .bg3 section .content_gift .gift_menu .active {
+    border-bottom: 1px solid #fff; color: #fff;
+}
+main .bg3 section .content_gift .gift_menu a {
+    font-family: 'Gowun Batang', serif;
+    padding: 2px 2px; font-size: 1.25em;
+    color: #CCCCCC;
+}
+main .bg3 section .content_gift .gifts {
+    margin-top: 32px;
+}
+main .bg3 section .content_gift .gifts .gift {
+    width: 1845px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .bg3 section .content_gift .gifts .gift p {}
+main .bg3 section .content_gift .gifts .gift p img {}
+main .bg3 section .content_gift .gifts .gift h4 {margin-top: 10px;}
+main .bg3 section .content_gift .gifts .gift .price,
+main .bg3 section .content_gift .gifts .gift h4 {
+    font-family: 'Gowun Batang', serif;
+    font-size: 1.25em; line-height: 160%;
+}
+main .bg3 section .content_gift .gifts .gift .price {
+    color: #C1B198;
+}
+main .bg3 section .content_gift .gifts .gf_memorial {}
+main .bg3 section .content_gift .gifts .gf_celebrate,
+main .bg3 section .content_gift .gifts .gf_thanks,
+main .bg3 section .content_gift .gifts .gf_marriage,
+main .bg3 section .content_gift .gifts .gf_birth,
+main .bg3 section .content_gift .gifts .gf_pregnancy,
+main .bg3 section .content_gift .gifts .gf_cheer,
+main .bg3 section .content_gift .gifts .gf_pleasure,
+main .bg3 section .content_gift .gifts .gf_comfort {display: none;}
+/* ----------------------------------------bg4 */
+main .bg4 {}
+main .bg4 section {}
+main .bg4 section h2 {padding-top: 68px;}
+main .bg4 section .sub_title {margin-bottom: 52px;}
+main .bg4 section .content_choice {
+    width: 1508px;
+    margin: 0 247px 0 165px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 210px;
+}
+main .bg4 section .content_choice .choice_menu {
+    padding-left: 12px; height: 270px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    border-left: 2px solid #fff;
+}
+main .bg4 section .content_choice .choice_menu a {
+    font-weight: 300;
+}
+main .bg4 section .content_choice .show_img {
+    width: 1395px; 
+}
+main .bg4 section .content_choice .show_img .show {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;}
+main .bg4 section .content_choice .show_img .show .big_image {}
+main .bg4 section .content_choice .show_img .show .big_image a:last-child {display: none;}
+main .bg4 section .content_choice .show_img .show .big_image a {}
+main .bg4 section .content_choice .show_img .show .big_image a img {}
+main .bg4 section .content_choice .show_img .show .small_image {
+    height: 918px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+main .bg4 section .content_choice .show_img .show .small_image a:hover {
+    color: rgb(255, 255, 255);}
+main .bg4 section .content_choice .show_img .show .small_image a {
+    width: 441px; height: 441px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    font-size: 1.25em; font-weight: 300;
+    line-height: 1.6;
+    color: rgba(255, 255, 255,0);
+    transition: 0.4s;
+}
+main .bg4 section .content_choice .show_img .hanoo,
+main .bg4 section .content_choice .show_img .wine,
+main .bg4 section .content_choice .show_img .susan,
+main .bg4 section .content_choice .show_img .beauty,
+main .bg4 section .content_choice .show_img .flower {display: none;}
+main .bg4 section .content_choice .show_img .wellbeing {}
+main .bg4 section .content_choice .show_img .wellbeing .small_image {}
+main .bg4 section .content_choice .show_img .wellbeing .small_image .well01 {
+    background-image: url(../images/choice_out04_1.jpg);
+    border-bottom: 0px solid #fff;
+    transition: 0.4s;
+}
+main .bg4 section .content_choice .show_img .wellbeing .small_image .well01:hover {
+    background-image: url(../images/choice_on04_1.jpg);
+    border-bottom: 1px solid #fff;
+}
+main .bg4 section .content_choice .show_img .wellbeing .small_image .well02 {
+    background-image: url(../images/choice_out04_2.jpg);
+    border-bottom: 0px solid #fff;
+    transition: 0.4s;
+}
+main .bg4 section .content_choice .show_img .wellbeing .small_image .well02:hover {
+    background-image: url(../images/choice_on04_2.jpg);
+    border-bottom: 1px solid #fff;
+}
+/* ----------------------------------------bg5 */
+main .bg5 {
+    text-align: center;
+    background-image: url(../images/banner_membership.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .bg5 section {}
+main .bg5 section h2 em {
+    font-family: 'Scheherazade New', serif;
+    color: #C1B198;
+}
+main .bg5 section h2 {
+    padding-top: 100px;
+    margin-bottom: 8px;
+    font-size: 3em;
+}
+main .bg5 section .sub_title {
+    width: 514px;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-top: 1px solid #C1B198;
+}
+main .bg5 section > p {
+    margin-top: 37px;
+    font-weight: 300;
+    line-height: 160%;
+}
+main .bg5 section .more_btn {
+    width: 120px; height: 35px;
+    margin: 0 auto;
+    padding-bottom: 121.02px;
+}
+main .bg5 section .more_btn a {
+    width: 120px; height: 35px;
+    margin-top: 28px;
+    background-image: url(../images/more_btn_bg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;}
+main .bg5 section .more_btn a p:last-child {margin: 0;}
+main .bg5 section .more_btn a p {
+    margin-left: 6px;
+    font-weight: 300;
+}
+main .bg5 section .more_btn a p img {}
+/* ----------------------------------------bg6 */
+main .bg6 {}
+main .bg6 section {
+    text-align: center;}
+main .bg6 section h2 {
+    margin-top: 207px;
+    font-family: 'Gowun Batang', serif;
+}
+main .bg6 section .sub_title {
+    margin-bottom: 82px;
+}
+main .bg6 section .content_point {
+    margin: 0 auto;
+    width:1342px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 207px;
+}
+main .bg6 section .content_point div {padding: 30px 100px;}
+main .bg6 section .content_point div p {
+    line-height: 1.6;
+    font-weight: 300;
+    color: #CCCCCC;
+}
+main .bg6 section .content_point div p img {}
+main .bg6 section .content_point div h4 {
+    margin: 25px 0;
+}
+main .bg6 section .content_point .point1 {}
+main .bg6 section .content_point .point2 {
+    border-left: 2px solid #C1B198;
+    border-right: 2px solid #C1B198;
+}
+main .bg6 section .content_point .point3 {}
+/* ----------------------------------------footer */
+footer {
+    background-color: #D9D9D9;
+    width: 100%;
+}
+footer .bg7 {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 90px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+footer .bg7 a,
+footer .bg7 p {color: #000 ;}
+footer .bg7 .left {}
+footer .bg7 .left h2 {}
+footer .bg7 .left h2 img {}
+footer .bg7 .left p {
+    margin-top: 35px;
+    font-size: 0.875em;
+    line-height: 2;
+}
+footer .bg7 .right {}
+footer .bg7 .right ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .bg7 .right ul li {
+    margin-left: 16px;
+}
+footer .bg7 .right ul li a {}
+footer .bg7 .right > p  {
+    margin-top: 110px;
+    float: right;
+}
