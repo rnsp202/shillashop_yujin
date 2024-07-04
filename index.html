@@ -16,88 +16,56 @@
     <script src="./script/swiper.js" defer></script>
     <script src="./script/header.js" defer></script>
     <script src="./script/product.js" defer></script>
+    <script src="./script/choice.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="top">
-            <h1><a href="#"><img src="./images/shilla_logo1.png" alt="신라호텔숍"></a></h1>
-            <div class="right">
-                <a href="#">로그인</a>
-                <a href="#">회원가입</a>
-                <a href="#">선물 서비스</a>
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="sub_bg"></div>
-            <nav>
-                <ul class="gnb">
-                    <li>
-                        <a href="#">고메</a>
-                        <ul class="lnb">
-                            <li><a href="#">한우</a></li>
-                            <li><a href="#">수산</a></li>
-                            <li><a href="#">웰빙</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">와인</a>
-                        <ul class="lnb">
-                            <li><a href="#">프랑스</a></li>
-                            <li><a href="#">이탈리아</a></li>
-                            <li><a href="#">미국</a></li>
-                            <li><a href="#">기타 지역</a></li>
-                            <li><a href="#">와인 혼합</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">플라워</a>
-                        <ul class="lnb">
-                            <li><a href="#">센터피스</a></li>
-                            <li><a href="#">꽃바구니</a></li>
-                            <li><a href="#">동양란</a></li>
-                            <li><a href="#">서양란</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">라이프스타일</a>
-                        <ul class="lnb">
-                            <li><a href="#">침구</a></li>
-                            <li><a href="#">린넨</a></li>
-                            <li><a href="#">리빙</a></li>
-                            <li><a href="#">뷰티</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="right">
-                <ul class="nav_right">
-                    <li>
-                        <a href="#" class="price_sch">가격대별</a>
-                        <ul class="price_list">
-                            <li><a href="#">70만원 이상</a></li>
-                            <li><a href="#">60만원대</a></li>
-                            <li><a href="#">50만원대</a></li>
-                            <li><a href="#">40만원대</a></li>
-                            <li><a href="#">30만원대</a></li>
-                            <li><a href="#">20만원대</a></li>
-                            <li><a href="#">10만원대</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="sch">
-                            <p>상품검색</p>
-                            <p><img src="./images/search.svg" alt=""></p>
-                        </a>
-                        <form action="#" method="post" id="search_product">
-                            <fieldset>
-                                <legend class="skip"></legend>
-                                <input type="text" name="search" id="search">
-                                <button type="button" id="search_btn"></button>
-                            </fieldset>
-                        </form>
-                    </li>
-                </ul>
-            </div>
+        <div class="sub_bg"></div>
+        <h1><a href="#"><img src="./images/shilla_logo1.png" alt="신라호텔숍"></a></h1>
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#">고메</a>
+                    <ul class="lnb">
+                        <li><a href="#">한우</a></li>
+                        <li><a href="#">수산</a></li>
+                        <li><a href="#">웰빙</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">와인</a>
+                    <ul class="lnb">
+                        <li><a href="#">프랑스</a></li>
+                        <li><a href="#">이탈리아</a></li>
+                        <li><a href="#">미국</a></li>
+                        <li><a href="#">기타 지역</a></li>
+                        <li><a href="#">와인 혼합</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">플라워</a>
+                    <ul class="lnb">
+                        <li><a href="#">센터피스</a></li>
+                        <li><a href="#">꽃바구니</a></li>
+                        <li><a href="#">동양란</a></li>
+                        <li><a href="#">서양란</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">라이프스타일</a>
+                    <ul class="lnb">
+                        <li><a href="#">침구</a></li>
+                        <li><a href="#">린넨</a></li>
+                        <li><a href="#">리빙</a></li>
+                        <li><a href="#">뷰티</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="right">
+            <a href="#"><img src="./images/person.svg" alt=""></a>
+            <a href="#"><img src="./images/reminder.svg" alt=""></a>
+            <a href="#"><img src="./images/gifts.svg" alt=""></a>
         </div>
     </header>
     <main>
@@ -172,9 +140,7 @@
                 <p class="sub_title">세심한 배려와 정성을 담은 신라호텔의 고급 포장 서비스로 소중한 순간을 더욱 빛내세요.</p>
                 <div class="more">
                     <a href="#" class="detail_btn">
-                        <p>자세히 보기</p>
-                        <p><img src="./images/add.svg" alt=""></p>
-                    </a>
+                        <img src="./images/add.svg" alt=""></a>
                     <p><img src="./images/package.jpg" alt="상자 포장, 보자기 포장, 랩 포장"></p>
                 </div>
             </section>
@@ -198,16 +164,16 @@
                                     <p class="gold_txt">구성품  |  1++등급, 스테이크용 등심 800g, 스테이크용 안심 600g, 채끝 800g, 생갈비 4대(800g) 총 3kg</p>
                                     <p class="gold_txt">원산지  |  국내산 한우 100%</p>
                                     <p class="small_txt">1++ 등급 중에서도 마블링 스코어가 가장 높은 한우의 특별함을 전해 드립니다.<br>한우의 본래 맛과 풍미를 즐길 수 있는 안심과 채끝, 풍부한 육즙의 등심, <br>살코기가 가장 많은 4~7번만 엄선한 갈비,<br>다채로운 부위들로 구성되어 활용도는 물론 그 가치도 한층 높였습니다.</p>
-                                    <p class="price">2,000,000원</p>
+                                    <p class="price">2,000,000 won</p>
                                 </div>
                             </div>
                             <div class="popular popular2">
                                 <div class="intrd_contents">
                                     <h4>OPUS ONE 2019</h4>
-                                    <p class="gold_txt">원산지  |  USA<br>California<br>Napa Valley     등급 | California AVA     알코올 | 14~15%</p>
+                                    <p class="gold_txt">원산지  |  USA California Napa Valley<em>....</em>등급 | California AVA<em>....</em>알코올 | 14~15%</p>
                                     <p class="gold_txt">품종  |  Cabernet Sauvignon, Merlot, Cabernet Franc, Petit Verolot, Malbec</p>
                                     <p class="small_txt">우아한 노트의 제비꽃, 흰 후추 그리고 장미 꽃잎 향이 이어지며 매력적인 향을 전합니다.<br>오렌지 껍질, 감초, 다크초콜릿 맛과 탁월한 균형감이 특징입니다.<br>부드러운 탄닌과 신선한 산도는 입안에서 좋은 느낌을 선사하며<br>긴 여운을 더합니다.</p>
-                                    <p class="price">1,050,000원</p>
+                                    <p class="price">1,050,000 won</p>
                                 </div>
                             </div>
                             <div class="popular popular3">
@@ -216,7 +182,7 @@
                                     <p class="gold_txt">꽃 구성  |  장미, 카네이션, 리시얀셔스, 그린소재 및 기타소재</p>
                                     <p class="gold_txt">화기 구격  |  42cm(w) x 28cm(d) x 36cm(h)</p>
                                     <p class="small_txt">풍성하고 자연스러운 느낌을 표현한 디자인의 꽃바구니입니다.<br>신성한 꽃으로 구성되며 물을 채운 화기에 꽃을 담아 생생히 유지합니다.<br>‘사랑의 맹세’라는 의미를 지닌 꽃 소재로 구성되어<br>결혼기념일 또는 특별한 날 선물하기 좋은 상품입니다.</p>
-                                    <p class="price">500,000원</p>
+                                    <p class="price">500,000 won</p>
                                 </div>
                             </div>
                             <div class="popular popular4">
@@ -225,15 +191,12 @@
                                     <p class="gold_txt">꽃 구성  |  호접난 15대</p>
                                     <p class="gold_txt">화기 구격  | 55cm(w) x 55cm(d) x 22cm(h)</p>
                                     <p class="small_txt">서양란은 선명한 색상의 아름다운 꽃과 독특한 향기로 인기 있는 꽃입니다.<br>‘행복이 날아든다’라는 의미를 지녀 축하의 마음을 전하기 좋습니다.<br>호접난은 꽃이 매우 아름다우며 오래도록 즐길 수 있어 선물용으로 좋습니다.<br>좋은 의미를 담은 꽃말로 받는 분에게 만족스러운 선물이 될 것입니다.</p>
-                                    <p class="price">500,000원</p>
+                                    <p class="price">500,000 won</p>
                                 </div>
                             </div>
                         </div>
                         <div class="mini_contents">
-                            <a href="#" class="detail_btn">
-                                <p>전체보기</p>
-                                <p><img src="./images/add.svg" alt=""></p>
-                            </a>
+                            <a href="#" class="detail_btn"><img src="./images/add.svg" alt=""></a>
                             <div class="mini_img">
                                 <a href="#" class="mini01">
                                     <img src="./images/product_on01.png" alt="">
@@ -259,14 +222,15 @@
                 <p class="sub_title">진심이 전해지는 순간까지 더없이 엄격한 눈으로 골라 구석구석 살피고 들여다봅니다.</p>
                 <div class="content_gift">
                     <div class="gift_menu">
-                        <a href="#" class="active">기념</a>
-                        <a href="#">축하</a>
-                        <a href="#">감사</a>
-                        <a href="#">결혼</a>
-                        <a href="#">출산</a>
-                        <a href="#">응원</a>
-                        <a href="#">쾌유</a>
-                        <a href="#">위로</a>
+                        <a href="#" class="active" onclick="return false;">기념</a>
+                        <a href="#" onclick="return false;">축하</a>
+                        <a href="#" onclick="return false;">감사</a>
+                        <a href="#" onclick="return false;">결혼</a>
+                        <a href="#" onclick="return false;">출산</a>
+                        <a href="#" onclick="return false;">임신</a>
+                        <a href="#" onclick="return false;">응원</a>
+                        <a href="#" onclick="return false;">쾌유</a>
+                        <a href="#" onclick="return false;">위로</a>
                     </div>
                     <div class="gifts">
                         <div class="gift gf_memorial">
@@ -477,12 +441,12 @@
                 <p class="sub_title">받는 분의 품격을 말하고 전하는 분의 정성과 안목을 보여줄 수 있는 신라가 엄선한 선물입니다.</p>
                 <div class="content_choice">
                     <div class="choice_menu">
-                        <a href="#">한우</a>
-                        <a href="#">와인</a>
-                        <a href="#">수산</a>
-                        <a href="#" class="active">웰빙</a>
-                        <a href="#">뷰티</a>
-                        <a href="#">플라워</a>
+                        <a href="#" onclick="return false;">한우</a>
+                        <a href="#" onclick="return false;">와인</a>
+                        <a href="#" onclick="return false;">수산</a>
+                        <a href="#" class="active" onclick="return false;">웰빙</a>
+                        <a href="#" onclick="return false;">뷰티</a>
+                        <a href="#" onclick="return false;">플라워</a>
                     </div>
                     <div class="show_img">
                         <div class="show hanoo">
