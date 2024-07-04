@@ -10,8 +10,9 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding-bottom: 26px;
+    /* padding-bottom: 26px; */
     align-items: end;
+    padding: 0 46px 26px 46px;
 }
 header h1 {}
 header h1 a {}
@@ -63,7 +64,11 @@ header nav .gnb li .lnb {
 header nav .gnb li .lnb li {
     margin-bottom: 16px;
 }
-header nav .gnb li .lnb li a {}
+header nav .gnb li .lnb li a {
+    color: #fff;
+    transition: 0.3s;
+}
+header nav .gnb li .lnb li a:hover {color: #e4cda8;}
 /* ----------------------------------------main */
 main {}
 main #visual_slide {}
@@ -106,6 +111,9 @@ main #visual_slide .swiper-wrapper .swiper-slide .visual_contents > p {
     line-height: 160%;
     margin: 36px 0 62px;
 }
+main #visual_slide .swiper-wrapper .swiper-slide .visual_contents .more_show:hover {
+    background-color: rgba(185, 159, 147, 0.445);
+}
 main #visual_slide .swiper-wrapper .swiper-slide .visual_contents .more_show {
     width: 230px; height: 60px;
     padding: 20px 22px;
@@ -114,6 +122,8 @@ main #visual_slide .swiper-wrapper .swiper-slide .visual_contents .more_show {
     justify-content: space-between;
     align-items: center;
     border: 1px solid #fff;
+    background-color: rgba(255, 255, 255,0);
+    transition: 0.4s;
 }
 main #visual_slide .swiper-wrapper .swiper-slide .visual_contents .more_show p {font-size: 1em;}
 main #visual_slide .swiper-wrapper .swiper-slide .visual_contents .more_show p img{
