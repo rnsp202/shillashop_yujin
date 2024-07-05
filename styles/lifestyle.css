@@ -86,6 +86,10 @@ main .bg .price {
     color: #C1B198; font-size: 1em;
     font-weight: 300;
 }
+.active {
+    font-weight: 500 !important; color: #C1B198 !important;
+    border-bottom: 1px solid #C1B198;
+}
 /* ----------------------------------------bg1 */
 main {}
 main .bg1 {width: 100%;}
@@ -103,7 +107,10 @@ main .bg2 .sub_nav {
     align-items: center;
     margin: 0 auto;
 }
+main .bg2 .sub_nav a:hover {color: #C1B198;}
 main .bg2 .sub_nav a {
+    color: #fff;
+    transition: 0.3s;
     padding: 6px 2px;
 }
 /* ----------------------------------------bg3 */
@@ -126,8 +133,19 @@ main .bg3 .best_lifestyle a {
     /* width: 258px; */
     display: inline-block;
 }
+main .bg3 .best_lifestyle a p:first-child {
+    width: 258px; height: 258px; overflow: hidden; position: relative;
+}
 main .bg3 .best_lifestyle a p {}
-main .bg3 .best_lifestyle a p img {}
+main .bg3 .best_lifestyle a p img {
+    width: 258px; transition: 0.4s;
+    position: absolute; 
+    top: 0; left: 0;
+}
+main .bg3 .best_lifestyle a p img:hover {
+    width: 290px;
+    top: -20px; left: -15px;
+}
 main .bg3 .best_lifestyle a h3 {}
 main .bg3 .best_lifestyle a .price {}
 /* ----------------------------------------bg4 */
@@ -140,8 +158,8 @@ main .bg4 .tab {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 6px;
-    border-bottom: 0.2px solid #fff;
-    margin-bottom: 40px;
+    border-bottom: 0.2px solid #d1d1d1;
+    margin-bottom: 70px;
 }
 main .bg4 .tab .howMany {
     width: 96px; display: flex;
@@ -157,10 +175,13 @@ main .bg4 .tab .listSequence a:last-child {
     border-right: 0;
     padding-right: 0;
 }
+main .bg4 .tab .listSequence a:hover {color: #C1B198;}
 main .bg4 .tab .listSequence a {
     font-weight: 200;
     padding: 0 20px;
     border-right: 1px solid #777777;
+    border-bottom: 0;
+    transition: 0.3s;
 }
 main .bg4 .list {
     display: flex;
@@ -177,8 +198,21 @@ main .bg4 .list a p {}
 main .bg4 .list a p img {}
 main .bg4 .list a h3 {}
 main .bg4 .list a .price {}
-main .bg4 .pageNum {}
-main .bg4 .pageNum a {}
+main .bg4 .pageNum {
+    margin: 0 auto;
+    padding-bottom: 175px;
+    width: 82px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main .bg4 .pageNum a:first-child {}
+main .bg4 .pageNum a:hover {color: #C1B198;}
+main .bg4 .pageNum a {
+    padding: 4px 5px; font-size: 1em; font-weight: 300;
+    transition: 0.4s;
+}
 /* ----------------------------------------footer */
 footer {
     background-color: #D9D9D9;
