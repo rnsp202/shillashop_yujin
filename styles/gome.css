@@ -134,13 +134,13 @@ main .bg3 .best_lifestyle a {
     display: inline-block;
 }
 main .bg3 .best_lifestyle a p:first-child {
-    width: 258px; height: 258px; overflow: hidden; position: relative;
+    width: 255px; height: 259px; overflow: hidden; position: relative;
 }
 main .bg3 .best_lifestyle a p {}
 main .bg3 .best_lifestyle a p img {
     width: 258px; transition: 0.4s;
     position: absolute; 
-    top: 0; left: 0;
+    top: 0; left: -2px;
 }
 main .bg3 .best_lifestyle a p img:hover {
     width: 290px;
