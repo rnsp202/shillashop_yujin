@@ -28,5 +28,4 @@
 * (07. 05) 서브 페이지 CSS 완성
 
 # 작업고충
-* 메인페이지 choice란
-- classlist.remove로 인해 원래 있던 값까지 지워져 다시 따로 add를 설정해야 했음
+* 메인페이지 choice란<br> - classlist.remove로 인해 원래 있던 값까지 지워져 다시 따로 add를 설정해야 했음
